@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizKit - Nigerian People and Culture</title>
+    <title>QuizKit - Quiz Selection</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div id="landing-page" class="screen active">
             <h1>Welcome to QuizKit!</h1>
-            <p class="intro-text">This quiz is designed to test your knowledge and help you master essential concepts in the Nigerian People and Culture course. Choose your learning style below, then begin!</p>
+            <p class="intro-text">Ready to test your knowledge? Choose a quiz below, select your feedback preference, then dive in!</p>
+
+            <div class="quiz-selection-container">
+                <p class="mode-prompt">Which quiz would you like to take?</p>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="quiz-choice" value="nigerian-culture" checked>
+                        Nigerian People and Culture
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="quiz-choice" value="jesus-messiah">
+                        Jesus The Messiah
+                    </label>
+                </div>
+            </div>
 
             <div class="feedback-mode-selection">
                 <p class="mode-prompt">How do you want to tackle this quiz?</p>
@@ -27,7 +41,7 @@
             <button id="start-quiz-btn" class="main-action-btn">Take the Quiz</button>
 
             <footer class="footer">
-                &copy; 2025 Posibright - QuizKit. All rights reserved.
+                &copy; 2025 QuizKit. All rights reserved.
             </footer>
         </div>
 
@@ -56,11 +70,10 @@
             <button id="retake-quiz-btn" class="main-action-btn">Retake Quiz</button>
 
             <div id="answers-review">
-                <h3>Detailed Answer Review</h3>
-            </div>
+                </div>
 
             <footer class="footer">
-                &copy; 2025 Posibright - QuizKit. All rights reserved.
+                &copy; 2025 QuizKit. All rights reserved.
             </footer>
         </div>
     </div>
