@@ -133,6 +133,77 @@ button:disabled {
     background-color: #30baba;
 }
 
+/* Quiz Selection Specific Styles */
+.quiz-selection-container {
+    margin-bottom: 40px;
+}
+
+.quiz-selection-container .mode-prompt {
+    margin-bottom: 15px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.radio-label:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.radio-label input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.radio-label input[type="radio"]:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.radio-label input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-label input[type="radio"]:checked + span { /* Targeting the text label if any */
+    color: var(--primary-color);
+}
+
+/* Existing Feedback Mode Selection Styles */
 .feedback-mode-selection {
     margin: 30px 0 40px;
     display: flex;
